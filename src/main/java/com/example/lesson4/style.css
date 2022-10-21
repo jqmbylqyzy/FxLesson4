@@ -1,0 +1,17 @@
+.menuItem{
+    -fx-background-color: transparent;
+}
+.menuItem: hover{
+    -fx-border-color: #660099;
+    -fx-border-width: 0px 0px 3px 0px;
+}
+
+.sidebarItem{
+    -fx-background-color: transparent;
+}
+
+.sidebarItem: hover{
+    -fx-background-color: #146886;
+    -fx-border-color: white;
+    -fx-border-width: 0px 0px 0px 3px;
+}
