@@ -26,7 +26,7 @@ public class Controller implements Initializable {
 
 
     @FXML
-    private ImageView Exit, max_img,min_img;
+    private ImageView Exit;
 
     @FXML
     private Label Menu;
@@ -53,9 +53,7 @@ public class Controller implements Initializable {
 
 
 
-        min_img.setOnMouseClicked(MouseEvent ->{
-            ((Stage)((ImageView)MouseEvent.getSource()).getScene().getWindow()).setIconified(true);
-        });
+
         Menu.setOnMouseClicked(event -> {
             TranslateTransition slide = new TranslateTransition();
             slide.setDuration(Duration.seconds(0.4));
@@ -70,16 +68,6 @@ public class Controller implements Initializable {
                 Menu.setVisible(false);
                 MenuClose.setVisible(true);
             });
-        });
-
-
-        max_img. setOnMouseClicked(event ->{
-            Stage stage = (Stage) Pane.getScene().getWindow();
-            if (stage.isMaximized()){
-                stage.setMaximized(false);
-            }else{
-                stage.setMaximized(true);
-            }
         });
 
 
